@@ -7,9 +7,7 @@ def urlChecker(line):
     url_found = True
     if not url:
         url_found = False
-        
-    #expand to take url / email and true
-        
+    
     return url_found
 # example
 # print(urlChecker('https://www.asda.ie'))
