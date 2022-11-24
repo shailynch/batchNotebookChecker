@@ -1,7 +1,8 @@
-import re
+
 
 #forbidden words function
 def termCheck(deniedTerms, line): 
+    import re
     #denied terms = list of terms to be checked e.g ['this', 'style', 'layout']
     #line takes any line to be checked this format doesn't matter but prefers string
     terms_count = {term : 0 for term in deniedTerms}
