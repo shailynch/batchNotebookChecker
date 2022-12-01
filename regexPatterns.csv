@@ -1,3 +1,4 @@
-variableName,pattern,weight
-emailsFound,100,[\w\.-]+@[\w\.-]+
-emails2,10,@
+index,pattern,weight
+0,[a-zA-Z0-9]+@[a-zA-Z]+\.(com|edu|net),100
+1,^(http|https),50
+2,[0-9],10
