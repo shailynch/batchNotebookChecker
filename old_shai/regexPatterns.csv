@@ -1,3 +1,0 @@
-variableName,pattern,weight
-emailsFound,100,[\w\.-]+@[\w\.-]+
-emails2,10,@
