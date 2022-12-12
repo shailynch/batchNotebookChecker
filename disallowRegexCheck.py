@@ -6,6 +6,8 @@ def checkRegex(patternList, line):
     # Return if the line matches the current pattern
     for pattern in patternList:
         searchResults = re.findall(pattern, line)
+        #print(searchResults)
         if len(searchResults) > 0:
             outputList[pattern] = len(searchResults)
+            #print(outputList)
     return outputList
