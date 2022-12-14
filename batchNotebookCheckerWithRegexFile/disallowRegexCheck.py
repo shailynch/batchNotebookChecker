@@ -1,0 +1,11 @@
+import re
+
+# Check inpout lines against input patterns/rules
+def checkRegex(patternList, line):
+    outputList = {pattern : 0 for pattern in patternList}
+    # Return if the line matches the current pattern
+    for pattern in patternList:
+        searchResults = re.findall(pattern, line)
+        if len(searchResults) > 0:
+            outputList[pattern] = len(searchResults)
+    return outputList
